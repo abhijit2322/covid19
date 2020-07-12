@@ -109,9 +109,9 @@ public class RestTask extends AsyncTask<HttpUriRequest, Void, String>
             AppSetiings.setSumdataarry(sumdata);
 
             System.out.println("Sum Data For Covid-19 :hi.............statistics................. ");
-            Intent y = new Intent(mContext, StatisticActivity.class);
+            //Intent y = new Intent(mContext, StatisticActivity.class);
             // intent.putExtra("graphtype", "piechart");
-            mContext.startActivity(y);
+           // mContext.startActivity(y);
 
         }
 
@@ -133,8 +133,8 @@ public class RestTask extends AsyncTask<HttpUriRequest, Void, String>
             AppSetiings.setCountryArray(countryArray);
 
             System.out.println("Sum Data For Covid-19 :hi.............countrylist_status................. ");
-            StatisticActivity stat=new StatisticActivity();
-            stat.Redraw_Chart();
+            //StatisticActivity stat=new StatisticActivity();
+            //stat.Redraw_Chart();
 
            // Intent y = new Intent(mContext, StatisticActivity.class);
             // intent.putExtra("graphtype", "piechart");
@@ -164,9 +164,9 @@ public class RestTask extends AsyncTask<HttpUriRequest, Void, String>
                     mContext.startActivity(I);
                 } else if (chart_type.contains("statistics")) {
                     System.out.println("Sum Data For Covid-19 :hi.............statistics................. ");
-                    Intent y = new Intent(mContext, StatisticActivity.class);
+                    //Intent y = new Intent(mContext, StatisticActivity.class);
                     // intent.putExtra("graphtype", "piechart");
-                    mContext.startActivity(y);
+                    //mContext.startActivity(y);
                 }
             }
         }
